@@ -43,7 +43,7 @@ export default function Home() {
     setIsSpinning(true);
     startRandomization();
 
-    const isJackpot = Math.random() < 0.35;
+    const isJackpot = Math.random() < 0.11;
     let jackpotPairs: number[];
 
     if (isJackpot) 
@@ -56,8 +56,8 @@ export default function Home() {
         stopRandomization();
 
         Swal.fire({
-          text: 'Kerja Woy! Judi Gak bikin Kaya',
-          icon: 'warning'
+          text: 'Anda Miskin, Cari Kerja Sana sAt! Ngapain Main Judol?',
+          icon: 'error'
         });
 
         setIsSpinning(false);
@@ -72,7 +72,7 @@ export default function Home() {
         stopRandomization();
 
         Swal.fire({
-          text: 'He he, Coba lagi',
+          text: 'Dikit Lagi, He He He',
         });
 
         setIsSpinning(false);
