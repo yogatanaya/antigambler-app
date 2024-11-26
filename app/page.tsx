@@ -56,7 +56,7 @@ export default function Home() {
         stopRandomization();
 
         Swal.fire({
-          text: 'Anda Miskin, Cari Kerja Sana sAt! Ngapain Main Judol?',
+          text: 'Judol Gak Bikin Kaya, Kerja Cok! Ngapain Main Judol?',
           icon: 'error'
         });
 
